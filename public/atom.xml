@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[A Blog About R]]></title>
+  <link href="http://velicankupeli.com/atom.xml" rel="self"/>
+  <link href="http://velicankupeli.com/"/>
+  <updated>2015-09-11T12:03:40+03:00</updated>
+  <id>http://velicankupeli.com/</id>
+  <author>
+    <name><![CDATA[Veli Can Küpeli]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello World!]]></title>
+    <link href="http://velicankupeli.com/blog/2015/09/11/hello-world/"/>
+    <updated>2015-09-11T11:35:23+03:00</updated>
+    <id>http://velicankupeli.com/blog/2015/09/11/hello-world</id>
+    <content type="html"><![CDATA[<p>Finally i can create my R-Blog which powered by <a href="http://octopress.org/">Octopress</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>
