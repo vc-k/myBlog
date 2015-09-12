@@ -110,6 +110,7 @@ DEPENDENCIES
   jekyll-sitemap
   octopress-date-format (~> 2.0)
   octopress-hooks (~> 2.2)
+  pygments.rb (~> 0.6.0)
   rake (~> 10.0)
   rb-fsevent (~> 0.9)
   rdiscount (~> 2.0)
