@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[A Blog About R]]></title>
-  <link href="http://velicankupeli.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Leaflet | A Blog About R]]></title>
+  <link href="http://velicankupeli.com/blog/categories/leaflet/atom.xml" rel="self"/>
   <link href="http://velicankupeli.com/"/>
   <updated>2015-09-12T13:41:10+03:00</updated>
   <id>http://velicankupeli.com/</id>
@@ -18,7 +18,7 @@
     <link href="http://velicankupeli.com/blog/2015/09/12/earthquakes-in-turkey-with-leaflet/"/>
     <updated>2015-09-12T10:59:55+03:00</updated>
     <id>http://velicankupeli.com/blog/2015/09/12/earthquakes-in-turkey-with-leaflet</id>
-    <content type="html"><![CDATA[<p><img src="http://velicankupeli.com/../../images/quakes.jpeg" width="890" height="280"></p>
+    <content type="html"><![CDATA[<p><img src="/../../images/quakes.jpeg" width="890" height="280"></p>
 
 <p>After i learn about Leaflet, i need to do something with it. And started to think about an earthquake map. In Turkey <a target="_blank" href="http://www.koeri.boun.edu.tr"/>KANDILLI OBSERVATORY AND EARTHQUAKE RESEARCH INSTITUTE</a> is the data source. Then i inspected their website. There is a tabulated quake entrys in every row (last 2000 observations) what i expected is the table in a table tag but it seemed different to me being in pre tag and i started to code. <!--more--></p>
 
@@ -46,15 +46,6 @@
 
 
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hello World!]]></title>
-    <link href="http://velicankupeli.com/blog/2015/09/11/hello-world/"/>
-    <updated>2015-09-11T11:35:23+03:00</updated>
-    <id>http://velicankupeli.com/blog/2015/09/11/hello-world</id>
-    <content type="html"><![CDATA[<p>Finally i can create my R-Blog which powered by <a target="_blank" href="http://octopress.org/">Octopress</a>.</p>
 ]]></content>
   </entry>
   

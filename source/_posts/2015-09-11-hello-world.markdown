@@ -7,4 +7,4 @@ categories:
 ---
 
 
-Finally i can create my R-Blog which powered by <a href="http://octopress.org/">Octopress</a>.
+Finally i can create my R-Blog which powered by <a target="_blank" href="http://octopress.org/">Octopress</a>.

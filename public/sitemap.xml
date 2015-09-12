@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://velicankupeli.com/blog/2015/09/12/earthquakes-in-turkey-with-leaflet/</loc>
+    <lastmod>2015-09-12T10:59:55+03:00</lastmod>
+  </url>
+  <url>
     <loc>http://velicankupeli.com/blog/2015/09/11/hello-world/</loc>
     <lastmod>2015-09-11T11:35:23+03:00</lastmod>
   </url>
   <url>
-    <loc>http://velicankupeli.com/blog/archives/</loc>
+    <loc>http://velicankupeli.com/archives/</loc>
   </url>
   <url>
-    <loc>http://velicankupeli.com/archives/</loc>
+    <loc>http://velicankupeli.com/blog/archives/</loc>
   </url>
   <url>
     <loc>http://velicankupeli.com/</loc>
@@ -20,7 +24,10 @@
     <loc>http://velicankupeli.com/posts/</loc>
   </url>
   <url>
+    <loc>http://velicankupeli.com/blog/categories/leaflet/</loc>
+  </url>
+  <url>
     <loc>http://velicankupeli.com/quakes.html</loc>
-    <lastmod>2015-09-05T23:24:01+03:00</lastmod>
+    <lastmod>2015-09-12T10:56:50+03:00</lastmod>
   </url>
 </urlset>
