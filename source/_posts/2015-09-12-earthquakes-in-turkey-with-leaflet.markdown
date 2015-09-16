@@ -4,6 +4,7 @@ title: "Earthquakes in Turkey with Leaflet"
 date: 2015-09-12 10:59:55 +0300
 comments: true
 categories: leaflet
+published: False
 ---
 
 {% img /../../images/quakes.jpeg 890 280 %}
