@@ -30,13 +30,23 @@ module Jekyll
     def initialize(tag_name, markup, tokens)
       @title = nil
       @file = nil
+      @startline = nil
+      @endline = nil
       if markup.strip =~ /\s*lang:(\S+)/i
         @filetype = $1
         markup = markup.strip.sub(/lang:\S+/i,'')
       end
+      if markup.strip =~ /\s*range:(\d+)-(\d+)/i
+        @startline = $1
+        @endline = $2
+        markup = markup.strip.sub(/range:(\d+)-(\d+)/i,'')
+      end
       if markup.strip =~ /(.*)?(\s+|^)(\/*\S+)/i
-        @title = $1 || nil
         @file = $3
+      end
+      if markup.strip =~ /\s*"(.+)"/i
+        @title = $1 || nil
+        markup = markup.strip.sub(/"(.+)"/i,'')
       end
       super
     end
@@ -56,6 +66,9 @@ module Jekyll
 
       Dir.chdir(code_path) do
         code = file.read
+        if @startline != nil 
+          code = code.lines.to_a[(@startline[0].to_i-1)..(@endline[0].to_i-1)].join
+        end
         @filetype = file.extname.sub('.','') if @filetype.nil?
         title = @title ? "#{@title} (#{file.basename})" : file.basename
         url = "/#{code_dir}/#{@file}"
