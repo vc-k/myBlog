@@ -36,10 +36,10 @@ module Jekyll
         @filetype = $1
         markup = markup.strip.sub(/lang:\S+/i,'')
       end
-      if markup.strip =~ /\s*range:(\d+)-(\d+)/i
+      if markup.strip =~ /\s*range:\s*(\d+)-(\d+)/i
         @startline = $1
         @endline = $2
-        markup = markup.strip.sub(/range:(\d+)-(\d+)/i,'')
+        markup = markup.strip.sub(/range:\s*(\d+)-(\d+)/i,'')
       end
       if markup.strip =~ /(.*)?(\s+|^)(\/*\S+)/i
         @file = $3
@@ -66,8 +66,8 @@ module Jekyll
 
       Dir.chdir(code_path) do
         code = file.read
-        if @startline != nil 
-          code = code.lines.to_a[(@startline[0].to_i-1)..(@endline[0].to_i-1)].join
+        if @startline != nil
+          code = code.lines.to_a[(@startline.to_i-1)..(@endline.to_i-1)].join
         end
         @filetype = file.extname.sub('.','') if @filetype.nil?
         title = @title ? "#{@title} (#{file.basename})" : file.basename

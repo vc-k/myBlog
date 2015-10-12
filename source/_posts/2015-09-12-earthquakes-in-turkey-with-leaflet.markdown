@@ -4,13 +4,20 @@ title: "Earthquakes in Turkey with Leaflet"
 date: 2015-09-12 10:59:55 +0300
 comments: true
 categories: leaflet
+published: false
 ---
 
 {% img /../../images/quakes.jpeg 890 280 %}
 
-After i learn about Leaflet, i need to do something with it. And started to think about an earthquake map. In Turkey <a target="_blank" href="http://www.koeri.boun.edu.tr"/>KANDILLI OBSERVATORY AND EARTHQUAKE RESEARCH INSTITUTE</a> is the data source. Then i inspected their website. There is a tabulated quake entrys in every row (last 2000 observations) what i expected is the table in a table tag but it seemed different to me being in pre tag and i started to code. <!--more-->
+After i am awere about Leaflet, i need to do something with it. And started to think about an earthquake map. In Turkey <a target="_blank" href="http://www.koeri.boun.edu.tr"/>KANDILLI OBSERVATORY AND EARTHQUAKE RESEARCH INSTITUTE</a> is the data source of eatrhquakes. Then i inspected their website. There is a table of quake data (last 2000 observations) what i expected is the table in a "table" tag but it seemed different to me being in "pre" tag and i started to write code. <!--more-->
 
-{% include_code range:1-2 title:"ebenin" quakes.r %}
+Firstly call packages:
+{% include_code range:1-4 title:"Packages" quakes.r %}
+
+Then with RCurl package get html content of quake report page:
+{% include_code range:6-7 title:"Packages" quakes.r %}
+
+After it need to be parsed and extract the data which is in "pre" tags. 
 
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verum esto: verbum ipsum voluptatis non habet dignitatem, nec nos fortasse intellegimus. Hoc autem tempore, etsi multa in omni parte Athenarum sunt in ipsis locis indicia summorum virorum, tamen ego illa moveor exhedra. Sunt enim levia et perinfirma, quae dicebantur a te, animi conscientia improbos excruciari, tum etiam poenae timore, qua aut afficiantur aut semper sint in metu ne afficiantur aliquando. Qui et definierunt plurima et definiendi artes reliquerunt, quodque est definitioni adiunctum, ut res in partes dividatur, id et fit ab illis et quem ad modum fieri oporteat traditur; Duo Reges: constructio interrete. Laboribus hic praeteritis gaudet, tu iubes voluptatibus, et hic se ad ea revocat, e quibus nihil umquam rettulerit ad corpus, tu totus haeres in corpore. Ita enim se Athenis collocavit, ut sit paene unus ex Atticis, ut id etiam cognomen videatur habiturus. Istius modi autem res dicere ornate velle puerile est, plane autem et perspicue expedire posse docti et intellegentis viri. Quocumque enim modo summum bonum sic exponitur, ut id vacet honestate, nec officia nec virtutes in ea ratione nec amicitiae constare possunt. Ne seges quidem igitur spicis uberibus et crebris, si avenam uspiam videris, nec mercatura quaestuosa, si in maximis lucris paulum aliquid damni contraxerit. Licet hic rursus ea commemores, quae optimis verbis ab Epicuro de laude amicitiae dicta sunt. Hic cum uterque me intueretur seseque ad audiendum significarent paratos, Primum, inquam, deprecor, ne me tamquam philosophum putetis scholam vobis aliquam explicaturum, quod ne in ipsis quidem philosophis magnopere umquam probavi. Quaero igitur, quo modo hae tantae commendationes a natura profectae subito a sapientia relictae sint. An, si id probas, fieri ita posse negas, ut ii, qui virtutis compotes sint, etiam malis quibusdam affecti beati sint? Negat enim definiri rem placere, sine quo fieri interdum non potest, ut inter eos, qui ambigunt, conveniat quid sit id, de quo agatur, velut in hoc ipso, de quo nunc disputamus. Quod maxime efficit Theophrasti de beata vita liber, in quo multum admodum fortunae datur. </p>
